@@ -102,7 +102,7 @@
             overflow: hidden;
             border: 1px solid #e5e7eb;
         }
-
+        /*
         .gallery-img-container {
             display: flex;
             background-color: #e5e7eb;
@@ -116,6 +116,22 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        */
+        .gallery-img-container {
+            display: flex;
+            background-color: #e5e7eb;
+            height: 350px; /* Ajustez cette hauteur (ex: 300px, 350px, 400px) */
+            position: relative;
+            overflow: hidden; /* Empêche l'image de dépasser de la boîte */
+            border-radius: 6px 6px 0 0;
+        }
+
+        .gallery-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Recadre intelligemment l'image sans la déformer */
+            object-position: center; /* Centre le zoom sur le milieu de la photo */
         }
 
         .gallery-title {
